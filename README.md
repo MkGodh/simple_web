@@ -67,6 +67,7 @@ cd build
 
 cmake ..
 cmake --build .
+```
  Запуск
 1. Запуск сервера
 ./gdhServer
