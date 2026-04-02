@@ -44,28 +44,28 @@ Simple Web (TCP Server/Client on Boost.Asio)
 
 ##  Сборка проекта
 
-git clone https://github.com/MkGodh/simple_web.git
-cd simple_web
+- git clone https://github.com/MkGodh/simple_web.git
+- cd simple_web
 
-mkdir build
-cd build
+- mkdir build
+- cd build
 
-cmake ..
-cmake --build .
-```
+- cmake ..
+- cmake --build .
+
 # Запуск
 
 ## Запуск сервера
 ```bash
 ./gdhServer
-```
+
 
 Сервер начнёт слушать порт **8080**
 
 ## Запуск клиента
 ```bash
 ./gdhClient
-```
+
 
 Если всё успешно:
 
