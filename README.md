@@ -44,7 +44,6 @@ Simple Web (TCP Server/Client on Boost.Asio)
 
 ##  Сборка проекта
 
-```bash
 git clone https://github.com/MkGodh/simple_web.git
 cd simple_web
 
@@ -54,31 +53,30 @@ cd build
 cmake ..
 cmake --build .
 ```
-## Запуск
--  Запуск сервера
-  ./gdhServer
+# Запуск
+
+## Запуск сервера
+
+```bash
+./gdhServer
 
 Сервер начнёт слушать порт 8080
 
- - Запуск клиента
-  ./gdhClient
+Запуск клиента
+./gdhClient
 
 Если всё успешно:
 
-  - Connected!
-### Как это работает
-Сервер запускается и ждёт подключения
+Connected!
+Как это работает
+Сервер
+Запускается и ждёт подключения
 Клиент подключается
-
-Сервер:
-
-создаёт TCPConnection
-отправляет сообщение (async_write)
-
-Клиент:
-
-получает данные (read_some)
-выводит их в консоль
+Создаёт TCPConnection
+Отправляет сообщение (async_write)
+Клиент
+Получает данные (read_some)
+Выводит их в консоль
 💡 Особенности реализации
 Используется shared_from_this() для безопасной работы с async callbacks
 Асинхронная модель без блокировок
@@ -96,19 +94,8 @@ cmake --build .
 Добавить логирование
 Реализовать корректное завершение соединений
 🧪 Пример вывода
-
-Сервер:
-
+Сервер
 Sent 128 bytes of data!
-
-Клиент:
-
-Connected!
-Hello from server...
-📄 Лицензия
-
-MIT
-
-✍️ Автор
-
-https://github.com/MkGodh
+Клиент
+Connected! Hello from server...
+```
