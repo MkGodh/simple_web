@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "gdhNetWorking",
+					"jsonFile" : "directory-gdhNetWorking-Debug-6304c7bdd507d7934f3f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "gdhNetWorking",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "gdhClient",
+					"jsonFile" : "directory-gdhClient-Debug-ea3af917803c7be184ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "gdhClient",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "gdhServer",
+					"jsonFile" : "directory-gdhServer-Debug-f468a404230cd4c57df2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "gdhServer",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "web_servers"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gdhNetWorking",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "gdhClient",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "gdhServer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "gdhClient::@92df174e0482adf56628",
+					"jsonFile" : "target-gdhClient-Debug-76323c53dfa0541298fc.json",
+					"name" : "gdhClient",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gdhNetWorking::@02e34396e194325d8dec",
+					"jsonFile" : "target-gdhNetWorking-Debug-099d6860efb4e5b6e198.json",
+					"name" : "gdhNetWorking",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gdhServer::@25b6ef5f23815ebe5bbc",
+					"jsonFile" : "target-gdhServer-Debug-90e40d2e815eec41d2c5.json",
+					"name" : "gdhServer",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/develop/Clion/web_servers/cmake-build-debug",
+		"source" : "C:/develop/Clion/web_servers"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
