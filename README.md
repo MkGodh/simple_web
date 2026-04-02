@@ -58,21 +58,21 @@ Simple Web (TCP Server/Client on Boost.Asio)
 ## Запуск сервера
 ```bash
 ./gdhServer
-
+```
 
 Сервер начнёт слушать порт **8080**
 
 ## Запуск клиента
 ```bash
 ./gdhClient
-
+```
 
 Если всё успешно:
+
 
 ```text
 Connected!
 ```
-
 # Как это работает
 
 ## Сервер
