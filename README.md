@@ -20,20 +20,6 @@ Simple Web (TCP Server/Client on Boost.Asio)
 
 ---
 
-##  Структура проекта
-
-
-simple_web/
-├── gdhClient/ # TCP клиент
-├── gdhServer/ # Точка входа сервера (main)
-├── gdhNetWorking/ # Сетевая логика (сервер + соединения)
-├── cmake-build-debug/
-├── .idea/
-└── CMakeLists.txt
-
-
----
-
 ##  Архитектура
 
 ###  Сервер
