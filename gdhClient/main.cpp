@@ -8,13 +8,13 @@ int main(int argc, char* argv[]){
     setlocale(LC_ALL, "Russian");
     try{
         boost::asio::io_context ioContext;
-
         tcp::resolver resolver{ioContext};
         auto  endPoints = resolver.resolve("127.0.0.1", "8080");
 
         tcp::socket socket {ioContext};
-        boost::asio::connect(socket, endPoints);
         boost::system::error_code ec;
+        boost::asio::connect(socket, endPoints, ec);
+
         if(ec) {
             std::cerr << "Connect failed: " << ec.message() << std::endl;
         } else {

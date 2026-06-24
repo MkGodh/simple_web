@@ -5,6 +5,7 @@
 #include "tcp_connection.h"
 #include <vector>
 #include <functional>
+#include <iostream>
 
 namespace  MOYF {
     enum class IPV{
@@ -35,7 +36,7 @@ namespace  MOYF {
     boost::asio::io_context _ioContext;
     boost::asio::ip::tcp::acceptor _acceptor;
 
-    std::vector<TCPConnection::pointer> _connections {};
+    std::vector<PROXYConnection::pointer> _connections {};
     };
 }
 

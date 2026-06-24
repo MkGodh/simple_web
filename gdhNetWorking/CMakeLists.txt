@@ -9,7 +9,11 @@ file(GLOB_RECURSE SOURCES
         src/*.cpp
 )
 
-add_library(${PROJECT_NAME} ${SOURCES})
+add_library(${PROJECT_NAME} ${SOURCES}
+        include/parser/parser.h
+        include/protocol/protocol.h
+        src/parser/parser.cpp
+        src/protocol/protocol.cpp)
 
 target_include_directories(gdhNetWorking
         PUBLIC
