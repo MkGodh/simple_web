@@ -41,24 +41,12 @@ Simple Web (TCP Server/Client on Boost.Asio)
  
   - **PROXYConnection**
   - Реализует две независимые цепочки передачи данных:
-  - Client → Remote
-
-    Client
-      ↓
-    Proxy
-      ↓
-  Remote Server
-
-  - Remote → Client
-    Remote Server
-        ↓
-      Proxy
-        ↓
-      Client
-
+  - Client → Remote : Client → Proxy → Remote Server
+  - Remote → Client:  Remote Server → Proxy → Client
   - Каждое направление работает независимо через собственный буфер:
     buff_client
     buff_remote
+
 ###  Клиент
 
 - Подключается к `127.0.0.1:8080`
