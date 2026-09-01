@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.27)
 project(gdhClient)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -17,7 +17,7 @@ target_include_directories(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
         PUBLIC
             gdhNetWorking
-        PRIVATE
-            ws2_32
-            mswsock
 )
+if(WIN32)
+    target_link_libraries(${PROJECT_NAME} PRIVATE ws2_32 mswsock)
+endif()

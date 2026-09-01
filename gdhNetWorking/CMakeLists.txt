@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.27)
 project(gdhNetWorking)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -11,8 +11,11 @@ file(GLOB_RECURSE SOURCES
 
 add_library(${PROJECT_NAME} ${SOURCES}
         include/parser/parser.h
+        include/parser/socks5_parser.h
         include/protocol/protocol.h
+        include/protocol/socks5.h
         src/parser/parser.cpp
+        src/parser/socks5_parser.cpp
         src/protocol/protocol.cpp)
 
 target_include_directories(gdhNetWorking

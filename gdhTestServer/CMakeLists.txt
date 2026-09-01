@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.27)
 project(gdhTestServer)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -10,8 +10,8 @@ include_directories(${Boost_INCLUDE_DIRS})
 
 add_executable(${PROJECT_NAME} main.cpp)
 
-target_link_libraries(${PROJECT_NAME}
-        PRIVATE
-        ws2_32
-        mswsock
-)
+if(WIN32)
+    target_link_libraries(${PROJECT_NAME} PRIVATE ws2_32 mswsock)
+endif()
+
+target_link_libraries(${PROJECT_NAME} PRIVATE Boost::boost)
